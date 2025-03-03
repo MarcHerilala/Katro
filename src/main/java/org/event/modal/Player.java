@@ -16,7 +16,7 @@ public class Player {
         choosenHole.clearHole();
         int currentRow=row;
         for(int i=0;i<numberOfSeeds;i++){
-            if(i==0 || i>board[0].length){
+            if(i==0 || i>board[0].length-1){
                 currentRow=switchRow(currentRow);
             }
             if(currentRow==1){
