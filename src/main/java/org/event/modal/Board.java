@@ -1,12 +1,10 @@
 package org.event.modal;
 
-import org.event.modal.player.Player;
-import org.event.modal.player.Player1;
-import org.event.modal.player.Player2;
+import java.util.List;
 
 public class Board {
-    Player1 player1;
-    Player2 player2;
+ List<Player> playersOnTheBoard;
+
 
 
 }

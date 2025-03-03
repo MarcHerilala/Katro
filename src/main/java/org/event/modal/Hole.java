@@ -8,6 +8,12 @@ public  class Hole  {
     public  void decrementSeed(){
         seedsNumber--;
     }
+    public void addSeeds(int seedsNumber){
+        this.seedsNumber=seedsNumber;
+    }
+    public  void clearHole(){
+        this.seedsNumber=0;
+    }
     public int getSeedsNumber(){
         return seedsNumber;
     }

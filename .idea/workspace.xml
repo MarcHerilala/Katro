@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd22806d-df33-4806-8544-ecf9af2980c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/event/utils/SeedDistributionDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/event/modal/Hole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/event/modal/Hole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/event/modal/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/event/modal/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/event/modal/player/Player1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/event/modal/player/Player1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +19,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2tfkZIolDSozvS4RRw0corEzCPu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -28,8 +32,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/marc/Marc/project/Katro",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -43,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740750574587</updated>
       <workItem from="1740750576187" duration="14000" />
+      <workItem from="1740839519917" duration="9433000" />
     </task>
     <servers />
   </component>
