@@ -1,6 +1,9 @@
 package org.event.modal;
 
 public  class Hole  {
+    public Hole(int seedsNumber){
+        this.seedsNumber=seedsNumber;
+    }
     private int seedsNumber;
     public void incrementSeed(){
         seedsNumber++;
