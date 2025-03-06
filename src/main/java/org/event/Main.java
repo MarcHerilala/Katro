@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Player player1=new Player("Soa");
+       /* Player player1=new Player("Soa");
         Player player2=new Player("Bema");
         Board board=new Board(player1,player2);
         player1.setOpponent(player2);
@@ -37,7 +37,7 @@ public class Main {
 
         System.out.println("=".repeat(50));
         System.out.println("player2");
-        player2.printBoard();
+        player2.printBoard();*/
 
 
 

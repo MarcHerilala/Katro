@@ -2,7 +2,9 @@ package org.event.modal;
 
 import org.event.Enum.SowingDirection;
 
-public class Player {
+import java.util.HashMap;
+
+public abstract sealed  class Player permits Player1,Player2 {
     String name;
     int score;
     Player opponent;
@@ -38,22 +40,10 @@ public class Player {
         int currentRow=row;
         int currentCol=col;
         for(int i=0;i<numberOfSeeds;i++){
-            if(currentCol==0 || currentCol>board[0].length-1){
-                currentRow=switchRow(currentRow);
-                currentCol=currentRow==0?0:3;
-            }
-            if(currentRow==1){
 
-                board[currentRow][currentCol].incrementSeed();
-                currentCol--;
-
-
-            } else if (currentRow==0) {
-
-                board[currentRow][currentCol].incrementSeed();
-                currentCol++;
-
-            }
+            HashMap<String ,Integer > currentIndexes=nextHoleIndexes(currentRow, currentCol);
+            currentRow=currentIndexes.get("next_row");
+            currentCol=currentIndexes.get("next_col");
             if(i==numberOfSeeds-1){
                 if(board[currentRow][currentCol].getSeedsNumber()>1){
                     captureSeeds(currentRow,currentCol);
@@ -69,12 +59,13 @@ public class Player {
 
         }
     }
+    public abstract HashMap<String,Integer> nextHoleIndexes(int row,int col);
     public void printBoard() {
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 4; j++) {
-                System.out.print("[" + board[i][j].getSeedsNumber() + "] ");  // Affiche le nombre de graines dans chaque trou
+                System.out.print("[" + board[i][j].getSeedsNumber() + "] ");
             }
-            System.out.println();  // Sauter à la ligne après chaque rangée
+            System.out.println();
         }
     }
     private void captureSeeds(int row,int col){
@@ -85,7 +76,7 @@ public class Player {
             this.board[row][col].addSeeds(opponentSeeds);
         }
     }
-    private int switchRow(int row){
+    protected int switchRow(int row){
         if(row==0){
             row=1;
         }
