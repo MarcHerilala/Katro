@@ -22,4 +22,11 @@ public final class Player1 extends Player {
         return nextHole;
     }
 
+    @Override
+    protected void captureSeeds(int row, int col) {
+        if(row==0){
+            //todo
+        }
+    }
+
 }

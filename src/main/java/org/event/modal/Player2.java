@@ -21,4 +21,9 @@ public final class Player2 extends Player {
 
         return nextHole;
     }
+
+    @Override
+    protected void captureSeeds(int row, int col) {
+        //todo
+    }
 }

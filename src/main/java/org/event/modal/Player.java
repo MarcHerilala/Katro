@@ -68,14 +68,14 @@ public abstract sealed  class Player permits Player1,Player2 {
             System.out.println();
         }
     }
-    private void captureSeeds(int row,int col){
+    protected abstract void captureSeeds(int row,int col);/*{
         int opponentRow=switchRow(row);
         int opponentSeeds=opponent.board[opponentRow][col].getSeedsNumber();
         if(opponentSeeds>0){
             opponent.board[opponentRow][col].clearHole();
             this.board[row][col].addSeeds(opponentSeeds);
         }
-    }
+    }*/
     protected int switchRow(int row){
         if(row==0){
             row=1;
